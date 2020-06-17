@@ -3,9 +3,9 @@
 
 **I pump iron during the day and smash my keyboard in the night.🐙** 
 
-## Project Title 🐕
+## Standard Form 🐕
 
-One Paragraph of project description goes here
+We planned to make a form website, which will be in use instead of the google forms. This is a great initiative to keep a database of all the people who are interested in our work, thus helping us to update them with our freshly brewed content. This project will also be the first project where the whole club will be contributing. 
 
 ## Getting Started 🎧
 

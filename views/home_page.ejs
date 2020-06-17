@@ -31,6 +31,9 @@
 
         <!-- FONT AWSOME -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
+
+        <!-- SWEET ALERT -->
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     </head>
     <style>
         body {
@@ -75,12 +78,11 @@
 
         /* BUTTON */
         .glow-on-hover {
-            width: 220px;
-            height: 50px;
+            padding: 1rem;
             border: none;
             outline: none;
             color: #fff;
-            background: #111;
+            background: #fff;
             cursor: pointer;
             position: relative;
             z-index: 0;
@@ -254,7 +256,13 @@
                         himself.</small
                     >
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button
+                    class="glow-on-hover mb-3"
+                    onclick="submitTheForm()"
+                    type="button"
+                >
+                    Submit
+                </button>
             </form>
         </div>
 
@@ -282,19 +290,88 @@
                         >
                             Come join in the family.
                         </p>
-                        <a
-                            href="https://www.instagram.com/vinnovateit/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <button
-                                class="glow-on-hover mb-3"
-                                onclick="closeModal()"
-                                type="button"
+                        <div>
+                            <a
+                                href="https://www.instagram.com/vinnovateit/"
+                                target="_blank"
+                                rel="noopener noreferrer"
                             >
-                                FOLLOW <i class="fab fa-instagram"></i>
-                            </button>
-                        </a>
+                                <button
+                                    class="glow-on-hover mb-3"
+                                    onclick="closeModal()"
+                                    type="button"
+                                >
+                                    <i
+                                        style="font-size: 2rem;"
+                                        class="fab fa-instagram"
+                                    ></i>
+                                </button>
+                            </a>
+                            <a
+                                href="https://www.facebook.com/VinnovateIT"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <button
+                                    class="glow-on-hover mb-3"
+                                    onclick="closeModal()"
+                                    type="button"
+                                >
+                                    <i
+                                        style="font-size: 2rem;"
+                                        class="fab fa-facebook"
+                                    ></i>
+                                </button>
+                            </a>
+                            <a
+                                href="http://"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <button
+                                    class="glow-on-hover mb-3"
+                                    onclick="closeModal()"
+                                    type="button"
+                                >
+                                    <i
+                                        style="font-size: 2rem;"
+                                        class="fab fa-twitter"
+                                    ></i>
+                                </button>
+                            </a>
+                            <a
+                                href="https://github.com/vinnovateit"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <button
+                                    class="glow-on-hover mb-3"
+                                    onclick="closeModal()"
+                                    type="button"
+                                >
+                                    <i
+                                        style="font-size: 2rem;"
+                                        class="fab fa-github"
+                                    ></i>
+                                </button>
+                            </a>
+                            <a
+                                href="https://www.linkedin.com/company/v-innovate-it/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <button
+                                    class="glow-on-hover mb-3"
+                                    onclick="closeModal()"
+                                    type="button"
+                                >
+                                    <i
+                                        style="font-size: 2rem;"
+                                        class="fab fa-linkedin-in"
+                                    ></i>
+                                </button>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -380,12 +457,16 @@
     <script>
         setTimeout(() => {
             $(".modal").modal("show");
-        }, 1000);
+        }, 15000);
     </script>
 
     <script>
         function closeModal() {
             $(".modal").modal("hide");
+        }
+
+        function submitTheForm() {
+            swal("Good job!", "You question has been noted!", "success");
         }
     </script>
 </html>

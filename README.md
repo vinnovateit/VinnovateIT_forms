@@ -5,7 +5,7 @@
 
 ## Standard Form 🐕
 
-We planned to make a form website, which will be in use instead of the google forms. This is a great initiative to keep a database of all the people who are interested in our work, thus helping us to update them with our freshly brewed content. This will save a long process of creating a google form, and then editing the basic questions. This project will also be the first project where the whole club will be contributing. 
+We planned to make a form website, which will be in use instead of the google forms. This is a great initiative to keep a database of all the people who are interested in our work, thus helping us to update them with our freshly brewed content. This project will also be the first project where the whole club will be contributing. 
 
 ## Getting Started 🎧
 

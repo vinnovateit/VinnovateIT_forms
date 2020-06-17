@@ -310,7 +310,7 @@
                     <input
                         type="email"
                         class="form-control"
-                        id="exampleInputEmail1"
+                        id="email_add"
                         name="email"
                         placeholder="Enter your email address."
                         aria-describedby="emailHelp"
@@ -323,11 +323,11 @@
                 <div class="form-group center_col">
                     <label for="exampleInputPassword1">Phone Number</label>
                     <input
-                        type="text"
+                        type="number"
                         class="form-control"
                         name="phone"
                         placeholder="Enter your phone number."
-                        id="exampleInputPassword1"
+                        id="phone_number"
                     />
                     <small id="emailHelp" class="form-text text-muted"
                         >We will send a reminder for the webinar on this phone
@@ -558,10 +558,28 @@
         }
 
         function submitTheForm() {
-            swal("Good job!", "You question has been noted!", "success");
-            setTimeout(() => {
-                document.getElementById("form_data").submit();
-            }, 3000);
+            console.log();
+            if (
+                $("#email_add").val() != "" &&
+                /^\S+@\S+$/.test($("#email_add").val())
+            ) {
+                if ($("#phone_number").val() != "") {
+                    swal(
+                        "Good job!",
+                        "Check your email , Question Noted!",
+                        "success"
+                    );
+                    setTimeout(() => {
+                        document.getElementById("form_data").submit();
+                    }, 3000);
+                } else {
+                    swal("Oh no!", "Enter phone number!", "error");
+                }
+            } else {
+                swal("Oh no!", "Enter email address!", "error");
+            }
+
+            // swal("Good job!", "You question has been noted!", "success");
         }
     </script>
 </html>

@@ -1,37 +1,38 @@
 {
-  "name": "vinnovateit_forms",
-  "version": "1.0.0",
-  "description": "A information gatherer for all vinnovateit events",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon app.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/vinnovateit/VinnovateIT_forms.git"
-  },
-  "keywords": [
-    "kshitij",
-    "dhyani",
-    "wimpy",
-    "warlord"
-  ],
-  "author": "wimpywarlord",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/vinnovateit/VinnovateIT_forms/issues"
-  },
-  "homepage": "https://github.com/vinnovateit/VinnovateIT_forms#readme",
-  "dependencies": {
-    "body-parser": "^1.19.0",
-    "cors": "^2.8.5",
-    "ejs": "^3.1.3",
-    "express": "^4.17.1",
-    "mongoose": "^5.9.19",
-    "nodemailer": "^6.4.10"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.4"
-  }
+    "name": "vinnovateit_forms",
+    "version": "1.0.0",
+    "description": "A information gatherer for all vinnovateit events",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "nodemon app.js",
+        "start": "node app.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/vinnovateit/VinnovateIT_forms.git"
+    },
+    "keywords": [
+        "kshitij",
+        "dhyani",
+        "wimpy",
+        "warlord"
+    ],
+    "author": "wimpywarlord",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/vinnovateit/VinnovateIT_forms/issues"
+    },
+    "homepage": "https://github.com/vinnovateit/VinnovateIT_forms#readme",
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "cors": "^2.8.5",
+        "ejs": "^3.1.3",
+        "express": "^4.17.1",
+        "mongoose": "^5.9.19",
+        "nodemailer": "^6.4.10"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.4"
+    }
 }

@@ -3,8 +3,8 @@
 
 VinnovateIt, a club for new innovations and crazy ideas having the potential of changing the way we think because **WE INNOVATE IT SECTOR**
 
-## VinnovateIT From
-An all in one portal making it convinient for students to register for upcomming events. 
+## Standard Form 🐕
+We planned to make a form website, which will be in use instead of the google forms. This is a great initiative to keep a database of all the people who are interested in our work, thus helping us to update them with our freshly brewed content. This project will also be the first project where the whole club will be contributing.
 
 ## Getting Started 🎧
 
@@ -18,23 +18,24 @@ These instructions will get you a copy of the project up and running on your loc
 ```
 Passion
 ```
-
 ```
 Dedication
+```
+```
+Node.js
 ```
 
 ## Installing☔
 
 A step by step explanation that tells you how to get a development environment running
-
 ```
-Download all the files present
-```
-```
-Contain them inside a folder , make sure to keep file locations as it is present in the repository
+Clone the repository into the deskotp or download the ZIP file and save in desktop
 ```
 ```
-Open the index.html file via any browser
+open the folder in the command line and run  'node app.js'
+```
+```
+Open localhost:8000 in any browser
 ```
 
 ## Built With 🎯

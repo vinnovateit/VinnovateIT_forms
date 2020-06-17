@@ -4,6 +4,58 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-167856909-3"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+
+            gtag("config", "UA-167856909-3");
+        </script>
+
+        <!-- META DATA -->
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <link rel="icon" href="" />
+        <title>VinnovateIT Forms.</title>
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary" />
+        <meta
+            name="twitter:url"
+            content="https://vinnnovateforms.herokuapp.com/"
+        />
+        <meta name=" twitter:title" content="Morning Bot" />
+        <meta
+            name="twitter:description"
+            content="Fill your details and get the best in class customer experience."
+        />
+        <meta
+            name="twitter:image"
+            content="https://i.ibb.co/YX2j0yJ/Vinnovate-IT.png"
+        />
+        <meta property="og:title" content="Morning Bot" />
+        <meta
+            property="og:url"
+            content="https://vinnnovateforms.herokuapp.com/"
+        />
+        <meta
+            property="og:description"
+            content="Fill your details and get the best in class customer experience."
+        />
+        <meta
+            property="og:image"
+            itemprop="image"
+            content="https://i.ibb.co/YX2j0yJ/Vinnovate-IT.png"
+        />
+
         <!-- CSS only -->
         <link
             rel="stylesheet"
@@ -74,6 +126,9 @@
             #demo {
                 font-size: 2rem;
             }
+            .mobile_countdown {
+                display: none;
+            }
         }
 
         /* BUTTON */
@@ -87,6 +142,7 @@
             position: relative;
             z-index: 0;
             border-radius: 10px;
+            border: 2px solid white;
         }
 
         .glow-on-hover:before {
@@ -152,10 +208,43 @@
                 background-position: 0 0;
             }
         }
+
         /* BUTTON */
+
+        /* GOOGEL CALENDER */
+        .google_reminder {
+            width: 70px;
+            height: 70px;
+            border-radius: 50px;
+            background-color: #f0f3f4;
+        }
+        .google_reminder_anchor {
+            position: absolute;
+            bottom: 60px;
+            right: 10px;
+            text-decoration: none !important;
+            z-index: 2;
+        }
     </style>
 
     <body>
+        <!-- GOOGLE CALENDER -->
+        <a
+            class="google_reminder_anchor center_col"
+            target="_blank"
+            href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=MTY4YmswdW1sMG4xaG9mZ2J2bWFzcjdjYTEgaDJxbDhvY2RjdmFxamwybXZlb2k4cjZwN2dAZw&amp;tmsrc=h2ql8ocdcvaqjl2mveoi8r6p7g%40group.calendar.google.com"
+        >
+            <p style="margin-bottom: 3px;">Reminder</p>
+            <div class="shadow-lg google_reminder center_col">
+                <img
+                    height="60px"
+                    width="60px"
+                    src="https://lh3.googleusercontent.com/oGR9I1X9No3SfFEXrq655tETtVVzI3jIphhmEVPGPEVuM5gfwh8lOGWHQFf6gjSTvw"
+                    alt=""
+                />
+            </div>
+        </a>
+
         <section class="counters mt-5">
             <div class="container">
                 <div class="row">
@@ -269,7 +358,7 @@
             </form>
         </div>
 
-        <div class="container-fluid">
+        <div class="mobile_countdown container-fluid">
             <div class="row center_col">
                 <p id="demo"></p>
             </div>
@@ -460,7 +549,7 @@
     <script>
         setTimeout(() => {
             $(".modal").modal("show");
-        }, 15000);
+        }, 6000);
     </script>
 
     <script>

@@ -571,7 +571,12 @@
                 $("#email_add").val() != "" &&
                 /^\S+@\S+$/.test($("#email_add").val())
             ) {
-                if ($("#phone_number").val() != "") {
+                if (
+                    $("#phone_number").val() != "" &&
+                    ($("#phone_number").val() == 10 ||
+                        $("#phone_number").val() == 13 ||
+                        $("#phone_number").val() == 11)
+                ) {
                     swal(
                         "Good job!",
                         "Check your email , Question Noted!",

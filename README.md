@@ -1,7 +1,3 @@
-# VinnovateIt
-![Follow Github](https://img.shields.io/github/followers/wimpywarlord?color=%2317202A&label=Follow%20wimpywarlord&logo=github&style=for-the-badge) ![Follow Twitter](https://img.shields.io/twitter/follow/kshitij_dhyani?color=%2317202A&label=Follow%20kshitij_dhyani&logo=twitter&style=for-the-badge) ![GitHub stars](https://img.shields.io/github/stars/wimpywarlord/Github_readme_template?color=%2317202A&label=STARS%20%F0%9F%8C%9F&logo=github&style=for-the-badge) 
-
-VinnovateIt, a club for new innovations and crazy ideas having the potential of changing the way we think because **WE INNOVATE IT SECTOR**
 
 ## Standard Form 🐕
 We planned to make a form website, which will be in use instead of the google forms. This is a great initiative to keep a database of all the people who are interested in our work, thus helping us to update them with our freshly brewed content. This project will also be the first project where the whole club will be contributing.

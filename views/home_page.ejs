@@ -115,15 +115,45 @@
             position: absolute;
             bottom: 0;
         }
-        #demo {
-            font-size: 4rem;
+
+        #time {
+            display: flex;
+            font-size: 3vh;
+            width: 28vw;
+            height: 7vh;
+            justify-content: space-around;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        #clock {
+            display: flex;
+            font-size: 4vw;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            height: 10vh;
+            line-height: 10vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .move{
+            animation: move ease-in-out 1s infinite;
+        }
+
+        @keyframes move {
+            from{
+                transform: translateY(0);
+            }
+            to{
+                transform: translateY(-20vh);
+            }
         }
 
         @media only screen and (max-width: 600px) {
             .mobile_counters {
                 font-size: 1rem;
             }
-            #demo {
+            #clock {
                 font-size: 2rem;
             }
             .mobile_countdown {
@@ -359,8 +389,29 @@
         </div>
 
         <div class="mobile_countdown container-fluid">
-            <div class="row center_col">
-                <p id="demo"></p>
+            <div class="row center_col">   
+                <div id="clock">
+                    <div class="number"><div>0</div></div>
+                    <div class="number"><div>0</div></div>
+                    <div class="number"><div>:</div></div>
+                    <div class="number"><div>0</div></div>
+                    <div class="number"><div>0</div></div>
+                    <div class="number"><div>:</div></div>
+                    <div class="number"><div>0</div></div>
+                    <div class="number"><div>0</div></div>
+                    <div class="number"><div>:</div></div>
+                    <div class="number"><div>0</div></div>
+                    <div class="number"><div>0</div></div>
+                </div>
+                <div id="time">
+                    <div class="frame">Days</div>
+                    <div class="frame">Hours</div>
+                    <div class="frame">Mins</div>
+                    <div class="frame">Secs</div>
+                </div> 
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                <!-- <script src="countdown.js"></script>
+                <script src="cdscript.js"></script> -->
             </div>
         </div>
 
@@ -470,13 +521,13 @@
         </div>
 
         <!-- FOOTER -->
-        <footer>
+        <div>
             <div class="container-fluid">
-                <div class="row footer center_col" style="color: black;">
+                <div class="row center_col" style="color: white;">
                     Made with 💕 by VinnovateIT
                 </div>
             </div>
-        </footer>
+        </div>
     </body>
 
     <!-- COUNTING -->
@@ -514,14 +565,13 @@
     <script>
         // Set the date we're counting down to
         var countDownDate = new Date("June 20, 2020 18:00:00").getTime();
-
         // Update the count down every 1 second
         var x = setInterval(function () {
             // Get today's date and time
-            var now = new Date().getTime();
+            var last = new Date().getTime();
 
-            // Find the distance between now and the count down date
-            var distance = countDownDate - now;
+            // Find the distance between last and the count down date
+            var distance = countDownDate - last;
 
             // Time calculations for days, hours, minutes and seconds
             var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -533,17 +583,102 @@
             );
             var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-            // Display the result in the element with id="demo"
-            document.getElementById("demo").innerHTML =
-                days + " : " + hours + " : " + minutes + " : " + seconds;
+            //for animation previous frame is required, have to calculate that ¯\_(ツ)_/¯
+            var distance_1 = countDownDate - last - 1000;
+            
+            // Time calculations for days, hours, minutes and seconds
+            var days_1 = Math.floor(distance_1 / (1000 * 60 * 60 * 24));
+            var hours_1 = Math.floor(
+                (distance_1 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+            );
+            var minutes_1 = Math.floor(
+                (distance_1 % (1000 * 60 * 60)) / (1000 * 60)
+            );
+            var seconds_1 = Math.floor((distance_1 % (1000 * 60)) / 1000);
 
+            // Display the result in the element with id="clock"
+            var zero = '0';
+            str_days = days.toString();
+            if (days < 10){
+                str_days = zero.concat(str_days);
+            }
+            str_hours = hours.toString();
+            if (hours < 10){
+                str_hours = zero.concat(str_hours);
+            }
+            str_minutes = minutes.toString();
+            if (minutes < 10){
+                str_minutes = zero.concat(str_minutes);
+            }
+            str_seconds = seconds.toString();
+            if (seconds < 10){
+                str_seconds = zero.concat(str_seconds);
+            }
+
+
+            str_days_1 = days_1.toString();
+            if (days_1 < 10){
+                str_days_1 = zero.concat(str_days_1);
+            }
+            str_hours_1 = hours_1.toString();
+            if (hours_1 < 10){
+                str_hours_1 = zero.concat(str_hours_1);
+            }
+            str_minutes_1 = minutes_1.toString();
+            if (minutes_1 < 10){
+                str_minutes_1 = zero.concat(str_minutes_1);
+            }
+            str_seconds_1 = seconds_1.toString();
+            if (seconds_1 < 10){
+                str_seconds_1 = zero.concat(str_seconds_1);
+            }
+
+            var last = str_days.concat(':', str_hours, ':', str_minutes , ':' , str_seconds);
+            var now = str_days.concat(':', str_hours_1, ':', str_minutes_1 , ':' , str_seconds_1);
+
+            
+
+            //document.getElementById("clock").innerHTML = now;
+            //document.getElementById("time").innerHTML = last;
+            //str_days + ":" + str_hours + ":" + str_minutes + ":" + str_seconds;
+            animateTime(last, now);
             // If the count down is finished, write some text
             if (distance < 0) {
                 clearInterval(x);
-                document.getElementById("demo").innerHTML = "EXPIRED";
+                document.getElementById("clock").innerHTML = "EXPIRED";
             }
         }, 1000);
-    </script>
+
+        var first = true;
+
+        function animateTime(last, now){
+            if (first){
+                for (var i = 0; i<now.length; i++){
+                    animate(i, now[i]);
+                }
+                first = false
+            }
+            for (var i = 0; i<now.length; i++){
+                if (last[i]!=now[i]){
+                    animate(i, now[i]);
+                }
+            }
+        }
+
+        function animate(index, number){
+            var element = document.getElementsByClassName("number")[index];
+            var second = element.lastElementChild.cloneNode(true);
+            second.innerHTML = number;
+            element.appendChild(second);
+            element.classList.add('move');
+            setTimeout(function(){
+                element.classList.remove('move');
+            }, 500)
+            setTimeout(function(){
+                element.removeChild(element.firstElementChild);
+            }, 500)
+        }
+    </script> 
 
     <!-- POP UP -->
     <script>

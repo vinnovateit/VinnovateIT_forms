@@ -45,9 +45,6 @@ Open localhost:8000 in any browser
 * [CSS](https://css-tricks.com/)
 * [JavaScript](https://www.javascript.com/)
 
-## Contributing 
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## We are Social Animals🏅
 *So connect with us and share your experience.*

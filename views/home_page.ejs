@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script
             async
@@ -28,6 +24,14 @@
         <title>VinnovateIT Forms.</title>
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary" />
+
+        <!-- add icon link -->
+        <link
+            rel="icon"
+            href="https://i.ibb.co/YX2j0yJ/Vinnovate-IT.png"
+            type="image/x-icon"
+        />
+
         <meta
             name="twitter:url"
             content="https://vinnnovateforms.herokuapp.com/"
@@ -119,18 +123,6 @@
             font-size: 4rem;
         }
 
-        @media only screen and (max-width: 600px) {
-            .mobile_counters {
-                font-size: 1rem;
-            }
-            #demo {
-                font-size: 2rem;
-            }
-            .mobile_countdown {
-                display: none;
-            }
-        }
-
         /* BUTTON */
         .glow-on-hover {
             padding: 1rem;
@@ -143,6 +135,10 @@
             z-index: 0;
             border-radius: 10px;
             border: 2px solid white;
+        }
+
+        .counters {
+            margin-top: 3rem;
         }
 
         .glow-on-hover:before {
@@ -225,27 +221,49 @@
             text-decoration: none !important;
             z-index: 2;
         }
+
+        @media only screen and (max-width: 600px) {
+            .counters {
+                margin-top: 1rem;
+            }
+            .mobile_counters {
+                font-size: 1rem;
+            }
+            #demo {
+                font-size: 2rem;
+            }
+            .mobile_countdown {
+                display: none;
+            }
+            .box_for_calender {
+                display: none;
+            }
+        }
     </style>
 
     <body>
         <!-- GOOGLE CALENDER -->
-        <a
-            class="google_reminder_anchor center_col"
-            target="_blank"
-            href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=MTY4YmswdW1sMG4xaG9mZ2J2bWFzcjdjYTEgaDJxbDhvY2RjdmFxamwybXZlb2k4cjZwN2dAZw&amp;tmsrc=h2ql8ocdcvaqjl2mveoi8r6p7g%40group.calendar.google.com"
-        >
-            <p style="margin-bottom: 3px;">Reminder</p>
-            <div class="shadow-lg google_reminder center_col">
-                <img
-                    height="60px"
-                    width="60px"
-                    src="https://lh3.googleusercontent.com/oGR9I1X9No3SfFEXrq655tETtVVzI3jIphhmEVPGPEVuM5gfwh8lOGWHQFf6gjSTvw"
-                    alt=""
-                />
-            </div>
-        </a>
+        <span class="box_for_calender">
+            <a
+                class="google_reminder_anchor center_col"
+                target="_blank"
+                href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=MTY4YmswdW1sMG4xaG9mZ2J2bWFzcjdjYTEgaDJxbDhvY2RjdmFxamwybXZlb2k4cjZwN2dAZw&amp;tmsrc=h2ql8ocdcvaqjl2mveoi8r6p7g%40group.calendar.google.com"
+            >
+                <p class="heading_of_reminder" style="margin-bottom: 3px;">
+                    Reminder
+                </p>
+                <div class="shadow-lg google_reminder center_col">
+                    <img
+                        height="60px"
+                        width="60px"
+                        src="https://lh3.googleusercontent.com/oGR9I1X9No3SfFEXrq655tETtVVzI3jIphhmEVPGPEVuM5gfwh8lOGWHQFf6gjSTvw"
+                        alt=""
+                    />
+                </div>
+            </a>
+        </span>
 
-        <section class="counters mt-3">
+        <section class="counters">
             <div class="container">
                 <div class="row">
                     <div class="col-4 center_col">
@@ -549,7 +567,7 @@
     <script>
         setTimeout(() => {
             $(".modal").modal("show");
-        }, 6000);
+        }, 5000);
     </script>
 
     <script>

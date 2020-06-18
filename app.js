@@ -53,7 +53,7 @@ app.post("/", function (req, res) {
     });
 
     var mailOptions = {
-        from: "wimpycodes@gmail.com",
+        from: "VinnovateIT",
         to: req.body.email,
         subject: `Join VinnovateIT at 6:00PM on 20th June.`,
         html: `${message}`,

@@ -1,5 +1,5 @@
 #                       VinnovateIt
-![Follow Github](https://github.com/vinnovateit) ![Follow Twitter](https://twitter.com/v_innovate_it) ![Follow Instagram](https://www.instagram.com/vinnovateit) ![Follow Facebook](https://www.facebook.com/VinnovateIT) ![Follow Linkedin](https://www.linkedin.com/company/v-innovate-it/)]
+![Follow Github](https://github.com/vinnovateit) ![Follow Twitter](https://twitter.com/v_innovate_it) ![Follow Instagram](https://www.instagram.com/vinnovateit) ![Follow Facebook](https://www.facebook.com/VinnovateIT) ![Follow Linkedin](https://www.linkedin.com/company/v-innovate-it/)
 
 VinnovateIt, a club for new innovations and crazy ideas having the potential of changing the way we think because **WE INNOVATE IT SECTOR**
 

@@ -114,10 +114,11 @@
 
         .footer {
             background-color: #ecf0f1;
-            width: 100vw;
+            width: 100%;
             height: 5vh;
-            position: absolute;
             bottom: 0;
+            position: fixed;
+            left: 0;
         }
         #demo {
             font-size: 4rem;
@@ -274,7 +275,7 @@
                                 src="https://image.flaticon.com/icons/png/512/2919/2919600.png"
                                 alt=""
                             />
-                            <div class="counter center_col" data-target="428">
+                            <div class="counter center_col" data-target="93">
                                 0
                             </div>
                             <h3 class="mobile_counters">Attendees</h3>
@@ -296,7 +297,7 @@
                                 />
                                 <div
                                     class="counter center_col"
-                                    data-target="292"
+                                    data-target="301"
                                 >
                                     0
                                 </div>
@@ -312,7 +313,7 @@
                                 src="https://image.flaticon.com/icons/svg/1076/1076984.svg"
                                 alt=""
                             />
-                            <div class="counter center_col" data-target="2344">
+                            <div class="counter center_col" data-target="753">
                                 0
                             </div>
                             <h3 class="mobile_counters">Likes</h3>
@@ -484,10 +485,8 @@
 
         <!-- FOOTER -->
         <footer>
-            <div class="container-fluid">
-                <div class="row footer center_col" style="color: black;">
-                    Made with 💕 by VinnovateIT
-                </div>
+            <div class="footer center_col" style="color: black;">
+                Made with 💕 by VinnovateIT
             </div>
         </footer>
     </body>
@@ -503,7 +502,7 @@
                 const count = +counter.innerText;
 
                 // Lower inc to slow and higher to slow
-                const inc = target / speed;
+                const inc = 2;
 
                 // console.log(inc);
                 // console.log(count);

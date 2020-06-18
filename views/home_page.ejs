@@ -1,151 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=UA-167856909-3"
-        ></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-            gtag("js", new Date());
 
-            gtag("config", "UA-167856909-3");
-        </script>
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167856909-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-        <!-- META DATA -->
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width,initial-scale=1" />
-        <link rel="icon" href="" />
-        <title>VinnovateIT Forms.</title>
-        <meta property="og:type" content="website" />
-        <meta name="twitter:card" content="summary" />
-
-        <!-- add icon link -->
-        <link
-            rel="icon"
-            href="https://i.ibb.co/YX2j0yJ/Vinnovate-IT.png"
-            type="image/x-icon"
-        />
-
-        <meta
-            name="twitter:url"
-            content="https://vinnnovateforms.herokuapp.com/"
-        />
-        <meta name=" twitter:title" content="VinnovateIT Forms" />
-        <meta
-            name="twitter:description"
-            content="Fill your details and get the best in class customer experience."
-        />
-        <meta
-            name="twitter:image"
-            content="https://i.ibb.co/YX2j0yJ/Vinnovate-IT.png"
-        />
-        <meta property="og:title" content="VinnovateIT Forms" />
-        <meta
-            property="og:url"
-            content="https://vinnnovateforms.herokuapp.com/"
-        />
-        <meta
-            property="og:description"
-            content="Fill your details and get the best in class customer experience."
-        />
-        <meta
-            property="og:image"
-            itemprop="image"
-            content="https://i.ibb.co/YX2j0yJ/Vinnovate-IT.png"
-        />
-
-        <!-- CSS only -->
-        <link
-            rel="stylesheet"
-            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-            integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-            crossorigin="anonymous"
-        />
-
-        <!-- JS, Popper.js, and jQuery -->
-        <script
-            src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-            crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-            crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-            crossorigin="anonymous"
-        ></script>
-
-        <!-- FONT AWSOME -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
-
-        <!-- SWEET ALERT -->
-        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    </head>
-    <style>
-        body {
-            background-color: #101010;
-            box-sizing: border-box;
-            color: white;
+        function gtag() {
+            dataLayer.push(arguments);
         }
+        gtag("js", new Date());
 
-        .center_col {
-            display: flex;
-            flex-flow: column;
-            justify-content: center;
-            align-items: center;
-        }
+        gtag("config", "UA-167856909-3");
+    </script>
 
-        .center_row {
-            display: flex;
-            flex-flow: row;
-            justify-content: center;
-            align-items: center;
-        }
+    <!-- META DATA -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="icon" href="" />
+    <title>VinnovateIT Forms.</title>
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary" />
 
-        .footer {
-            background-color: #ecf0f1;
-            width: 100%;
-            height: 5vh;
-            bottom: 0;
-            position: fixed;
-            left: 0;
-        }
-        #demo {
-            font-size: 4rem;
-        }
+    <!-- add icon link -->
+    <link rel="icon" href="https://i.ibb.co/YX2j0yJ/Vinnovate-IT.png" type="image/x-icon" />
 
-        /* BUTTON */
-        .glow-on-hover {
-            padding: 1rem;
-            border: none;
-            outline: none;
-            color: #fff;
-            background: #fff;
-            cursor: pointer;
-            position: relative;
-            z-index: 0;
-            border-radius: 10px;
-            border: 2px solid white;
-        }
+    <meta name="twitter:url" content="https://vinnnovateforms.herokuapp.com/" />
+    <meta name=" twitter:title" content="VinnovateIT Forms" />
+    <meta name="twitter:description" content="Fill your details and get the best in class customer experience." />
+    <meta name="twitter:image" content="https://i.ibb.co/YX2j0yJ/Vinnovate-IT.png" />
+    <meta property="og:title" content="VinnovateIT Forms" />
+    <meta property="og:url" content="https://vinnnovateforms.herokuapp.com/" />
+    <meta property="og:description" content="Fill your details and get the best in class customer experience." />
+    <meta property="og:image" itemprop="image" content="https://i.ibb.co/YX2j0yJ/Vinnovate-IT.png" />
 
-        .counters {
-            margin-top: 3rem;
-        }
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
 
-        .glow-on-hover:before {
-            content: "";
-            background: linear-gradient(
-                45deg,
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+
+    <!-- FONT AWSOME -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
+
+    <!-- SWEET ALERT -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<style>
+    body {
+        background-color: #101010;
+        box-sizing: border-box;
+        color: white;
+    }
+
+    .center_col {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .center_row {
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer {
+        background-color: #ecf0f1;
+        width: 100%;
+        height: 5vh;
+        bottom: 0;
+        position: fixed;
+        left: 0;
+    }
+
+    #demo {
+        font-size: 4rem;
+    }
+
+    /* BUTTON */
+    .glow-on-hover {
+        padding: 1rem;
+        border: none;
+        outline: none;
+        color: #fff;
+        background: #fff;
+        cursor: pointer;
+        position: relative;
+        z-index: 0;
+        border-radius: 10px;
+        border: 2px solid white;
+    }
+
+    .counters {
+        margin-top: 3rem;
+    }
+
+    .glow-on-hover:before {
+        content: "";
+        background: linear-gradient(45deg,
                 #ff0000,
                 #ff7300,
                 #fffb00,
@@ -154,440 +120,339 @@
                 #002bff,
                 #7a00ff,
                 #ff00c8,
-                #ff0000
-            );
-            position: absolute;
-            top: -2px;
-            left: -2px;
-            background-size: 400%;
-            z-index: -1;
-            filter: blur(5px);
-            width: calc(100% + 4px);
-            height: calc(100% + 4px);
-            animation: glowing 20s linear infinite;
-            opacity: 0;
-            transition: opacity 0.3s ease-in-out;
-            border-radius: 10px;
+                #ff0000);
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        background-size: 400%;
+        z-index: -1;
+        filter: blur(5px);
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        animation: glowing 20s linear infinite;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        border-radius: 10px;
+    }
+
+    .glow-on-hover:active {
+        color: #000;
+    }
+
+    .glow-on-hover:active:after {
+        background: transparent;
+    }
+
+    .glow-on-hover:hover:before {
+        opacity: 1;
+    }
+
+    .glow-on-hover:after {
+        z-index: -1;
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #111;
+        left: 0;
+        top: 0;
+        border-radius: 10px;
+    }
+
+    @keyframes glowing {
+        0% {
+            background-position: 0 0;
         }
 
-        .glow-on-hover:active {
-            color: #000;
+        50% {
+            background-position: 400% 0;
         }
 
-        .glow-on-hover:active:after {
-            background: transparent;
+        100% {
+            background-position: 0 0;
+        }
+    }
+
+    /* BUTTON */
+
+    /* GOOGEL CALENDER */
+    .google_reminder {
+        width: 70px;
+        height: 70px;
+        border-radius: 50px;
+        background-color: #f0f3f4;
+    }
+
+    .google_reminder_anchor {
+        position: absolute;
+        bottom: 60px;
+        right: 10px;
+        text-decoration: none !important;
+        z-index: 2;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .counters {
+            margin-top: 1rem;
         }
 
-        .glow-on-hover:hover:before {
-            opacity: 1;
+        .mobile_counters {
+            font-size: 1rem;
         }
 
-        .glow-on-hover:after {
-            z-index: -1;
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            background: #111;
-            left: 0;
-            top: 0;
-            border-radius: 10px;
+        #demo {
+            font-size: 2rem;
         }
 
-        @keyframes glowing {
-            0% {
-                background-position: 0 0;
-            }
-            50% {
-                background-position: 400% 0;
-            }
-            100% {
-                background-position: 0 0;
-            }
+        .mobile_countdown {
+            display: none;
         }
 
-        /* BUTTON */
-
-        /* GOOGEL CALENDER */
-        .google_reminder {
-            width: 70px;
-            height: 70px;
-            border-radius: 50px;
-            background-color: #f0f3f4;
+        .box_for_calender {
+            display: none;
         }
-        .google_reminder_anchor {
-            position: absolute;
-            bottom: 60px;
-            right: 10px;
-            text-decoration: none !important;
-            z-index: 2;
-        }
+    }
+</style>
 
-        @media only screen and (max-width: 600px) {
-            .counters {
-                margin-top: 1rem;
-            }
-            .mobile_counters {
-                font-size: 1rem;
-            }
-            #demo {
-                font-size: 2rem;
-            }
-            .mobile_countdown {
-                display: none;
-            }
-            .box_for_calender {
-                display: none;
-            }
-        }
-    </style>
+<body>
+    <!-- GOOGLE CALENDER -->
+    <span class="box_for_calender">
+        <a class="google_reminder_anchor center_col" target="_blank"
+            href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=MTY4YmswdW1sMG4xaG9mZ2J2bWFzcjdjYTEgaDJxbDhvY2RjdmFxamwybXZlb2k4cjZwN2dAZw&amp;tmsrc=h2ql8ocdcvaqjl2mveoi8r6p7g%40group.calendar.google.com">
+            <p class="heading_of_reminder" style="margin-bottom: 3px;">
+                Reminder
+            </p>
+            <div class="shadow-lg google_reminder center_col">
+                <img height="60px" width="60px"
+                    src="https://lh3.googleusercontent.com/oGR9I1X9No3SfFEXrq655tETtVVzI3jIphhmEVPGPEVuM5gfwh8lOGWHQFf6gjSTvw"
+                    alt="" />
+            </div>
+        </a>
+    </span>
 
-    <body>
-        <!-- GOOGLE CALENDER -->
-        <span class="box_for_calender">
-            <a
-                class="google_reminder_anchor center_col"
-                target="_blank"
-                href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=MTY4YmswdW1sMG4xaG9mZ2J2bWFzcjdjYTEgaDJxbDhvY2RjdmFxamwybXZlb2k4cjZwN2dAZw&amp;tmsrc=h2ql8ocdcvaqjl2mveoi8r6p7g%40group.calendar.google.com"
-            >
-                <p class="heading_of_reminder" style="margin-bottom: 3px;">
-                    Reminder
-                </p>
-                <div class="shadow-lg google_reminder center_col">
-                    <img
-                        height="60px"
-                        width="60px"
-                        src="https://lh3.googleusercontent.com/oGR9I1X9No3SfFEXrq655tETtVVzI3jIphhmEVPGPEVuM5gfwh8lOGWHQFf6gjSTvw"
-                        alt=""
-                    />
+    <section class="counters">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 center_col">
+                    <div class="center_col">
+                        <img height="50px" width="50px" src="https://image.flaticon.com/icons/png/512/2919/2919600.png"
+                            alt="" />
+                        <div class="counter center_col" data-target="93">
+                            0
+                        </div>
+                        <h3 class="mobile_counters">Attendees</h3>
+                    </div>
                 </div>
-            </a>
-        </span>
-
-        <section class="counters">
-            <div class="container">
-                <div class="row">
-                    <div class="col-4 center_col">
+                <div class="col-4 center_col">
+                    <a href="https://www.instagram.com/vinnovateit/" target="_blank" style="text-decoration: none;"
+                        rel="noopener noreferrer">
                         <div class="center_col">
-                            <img
-                                height="50px"
-                                width="50px"
-                                src="https://image.flaticon.com/icons/png/512/2919/2919600.png"
-                                alt=""
-                            />
-                            <div class="counter center_col" data-target="93">
+                            <img height="50px" width="50px" src="https://image.flaticon.com/icons/svg/889/889200.svg"
+                                alt="" />
+                            <div class="counter center_col" data-target="301">
                                 0
                             </div>
-                            <h3 class="mobile_counters">Attendees</h3>
+                            <h3 class="mobile_counters">Instagram</h3>
                         </div>
+                    </a>
+                </div>
+                <div class="col-4 center_col">
+                    <div class="center_col">
+                        <img height="50px" width="50px" src="https://image.flaticon.com/icons/svg/1076/1076984.svg"
+                            alt="" />
+                        <div class="counter center_col" data-target="753">
+                            0
+                        </div>
+                        <h3 class="mobile_counters">Likes</h3>
                     </div>
-                    <div class="col-4 center_col">
-                        <a
-                            href="https://www.instagram.com/vinnovateit/"
-                            target="_blank"
-                            style="text-decoration: none;"
-                            rel="noopener noreferrer"
-                        >
-                            <div class="center_col">
-                                <img
-                                    height="50px"
-                                    width="50px"
-                                    src="https://image.flaticon.com/icons/svg/889/889200.svg"
-                                    alt=""
-                                />
-                                <div
-                                    class="counter center_col"
-                                    data-target="301"
-                                >
-                                    0
-                                </div>
-                                <h3 class="mobile_counters">Instagram</h3>
-                            </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container center_col mt-4">
+        <form id="form_data" class="center_col" action="/" method="POST">
+            <div class="form-group center_col">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="email_add" name="email"
+                    placeholder="Enter your email address." aria-describedby="emailHelp" />
+                <small id="emailHelp" class="form-text text-muted">We will send a reminder for the webinar on this email
+                    address.</small>
+            </div>
+            <div class="form-group center_col">
+                <label for="exampleInputPassword1">Phone Number</label>
+                <input type="number" class="form-control" name="phone" placeholder="Enter your phone number."
+                    id="phone_number" />
+                <small id="emailHelp" class="form-text text-muted">We will send a reminder for the webinar on this phone
+                    number.</small>
+            </div>
+            <div class="form-group center_col">
+                <label for="for_question">Question</label>
+                <input type="text" class="form-control" name="question" placeholder="Enter your question here."
+                    id="for_question" />
+                <small id="emailHelp" class="form-text text-muted">Get your queries answered and solved by Vinit Shahdeo
+                    himself.</small>
+            </div>
+            <button class="glow-on-hover mb-3" onclick="submitTheForm()" type="button">
+                Submit
+            </button>
+        </form>
+    </div>
+
+    <div class="mobile_countdown container-fluid">
+        <div class="row center_col">
+            <p id="demo"></p>
+        </div>
+    </div>
+
+    <!-- MODAL POP FOR REGISTER TO INSTAGRAM -->
+    <div class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body center_col">
+                    <img height="120px" width="120px" class="mt-2"
+                        src="https://image.flaticon.com/icons/svg/2892/2892390.svg" alt="" />
+                    <p class="mt-3" style="color: black; font-size: 1.2rem;">
+                        Come join in the family.
+                    </p>
+                    <div>
+                        <a href="https://www.instagram.com/vinnovateit/" target="_blank" rel="noopener noreferrer">
+                            <button class="glow-on-hover mb-3" type="button">
+                                <i style="font-size: 2rem;" class="fab fa-instagram"></i>
+                            </button>
+                        </a>
+                        <a href="https://www.facebook.com/VinnovateIT" target="_blank" rel="noopener noreferrer">
+                            <button class="glow-on-hover mb-3" type="button">
+                                <i style="font-size: 2rem;" class="fab fa-facebook"></i>
+                            </button>
+                        </a>
+                        <a href="https://twitter.com/v_innovate_it" target="_blank" rel="noopener noreferrer">
+                            <button class="glow-on-hover mb-3" type="button">
+                                <i style="font-size: 2rem;" class="fab fa-twitter"></i>
+                            </button>
+                        </a>
+                        <a href="https://github.com/vinnovateit" target="_blank" rel="noopener noreferrer">
+                            <button class="glow-on-hover mb-3" type="button">
+                                <i style="font-size: 2rem;" class="fab fa-github"></i>
+                            </button>
+                        </a>
+                        <a href="https://www.linkedin.com/company/v-innovate-it/" target="_blank"
+                            rel="noopener noreferrer">
+                            <button class="glow-on-hover mb-3" type="button">
+                                <i style="font-size: 2rem;" class="fab fa-linkedin-in"></i>
+                            </button>
                         </a>
                     </div>
-                    <div class="col-4 center_col">
-                        <div class="center_col">
-                            <img
-                                height="50px"
-                                width="50px"
-                                src="https://image.flaticon.com/icons/svg/1076/1076984.svg"
-                                alt=""
-                            />
-                            <div class="counter center_col" data-target="753">
-                                0
-                            </div>
-                            <h3 class="mobile_counters">Likes</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <div class="container center_col mt-4">
-            <form id="form_data" class="center_col" action="/" method="POST">
-                <div class="form-group center_col">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input
-                        type="email"
-                        class="form-control"
-                        id="email_add"
-                        name="email"
-                        placeholder="Enter your email address."
-                        aria-describedby="emailHelp"
-                    />
-                    <small id="emailHelp" class="form-text text-muted"
-                        >We will send a reminder for the webinar on this email
-                        address.</small
-                    >
-                </div>
-                <div class="form-group center_col">
-                    <label for="exampleInputPassword1">Phone Number</label>
-                    <input
-                        type="number"
-                        class="form-control"
-                        name="phone"
-                        placeholder="Enter your phone number."
-                        id="phone_number"
-                    />
-                    <small id="emailHelp" class="form-text text-muted"
-                        >We will send a reminder for the webinar on this phone
-                        number.</small
-                    >
-                </div>
-                <div class="form-group center_col">
-                    <label for="for_question">Question</label>
-                    <input
-                        type="text"
-                        class="form-control"
-                        name="question"
-                        placeholder="Enter your question here."
-                        id="for_question"
-                    />
-                    <small id="emailHelp" class="form-text text-muted"
-                        >Get your queries answered and solved by Vinit Shahdeo
-                        himself.</small
-                    >
-                </div>
-                <button
-                    class="glow-on-hover mb-3"
-                    onclick="submitTheForm()"
-                    type="button"
-                >
-                    Submit
-                </button>
-            </form>
-        </div>
-
-        <div class="mobile_countdown container-fluid">
-            <div class="row center_col">
-                <p id="demo"></p>
-            </div>
-        </div>
-
-        <!-- MODAL POP FOR REGISTER TO INSTAGRAM -->
-        <div class="modal" tabindex="-1" role="dialog">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-body center_col">
-                        <img
-                            height="120px"
-                            width="120px"
-                            class="mt-2"
-                            src="https://image.flaticon.com/icons/svg/2892/2892390.svg"
-                            alt=""
-                        />
-                        <p
-                            class="mt-3"
-                            style="color: black; font-size: 1.2rem;"
-                        >
-                            Come join in the family.
-                        </p>
-                        <div>
-                            <a
-                                href="https://www.instagram.com/vinnovateit/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <button
-                                    class="glow-on-hover mb-3"
-                                    type="button"
-                                >
-                                    <i
-                                        style="font-size: 2rem;"
-                                        class="fab fa-instagram"
-                                    ></i>
-                                </button>
-                            </a>
-                            <a
-                                href="https://www.facebook.com/VinnovateIT"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <button
-                                    class="glow-on-hover mb-3"
-                                    type="button"
-                                >
-                                    <i
-                                        style="font-size: 2rem;"
-                                        class="fab fa-facebook"
-                                    ></i>
-                                </button>
-                            </a>
-                            <a
-                                href="https://twitter.com/v_innovate_it"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <button
-                                    class="glow-on-hover mb-3"
-                                    type="button"
-                                >
-                                    <i
-                                        style="font-size: 2rem;"
-                                        class="fab fa-twitter"
-                                    ></i>
-                                </button>
-                            </a>
-                            <a
-                                href="https://github.com/vinnovateit"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <button
-                                    class="glow-on-hover mb-3"
-                                    type="button"
-                                >
-                                    <i
-                                        style="font-size: 2rem;"
-                                        class="fab fa-github"
-                                    ></i>
-                                </button>
-                            </a>
-                            <a
-                                href="https://www.linkedin.com/company/v-innovate-it/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <button
-                                    class="glow-on-hover mb-3"
-                                    type="button"
-                                >
-                                    <i
-                                        style="font-size: 2rem;"
-                                        class="fab fa-linkedin-in"
-                                    ></i>
-                                </button>
-                            </a>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- FOOTER -->
-        <footer>
-            <div class="footer center_col" style="color: black;">
-                Made with 💕 by VinnovateIT
-            </div>
-        </footer>
-    </body>
+    <!-- FOOTER -->
+    <footer class="page-footer">
+        <div class="footer center_col" style="color: black;">
+            Made with 💕 by VinnovateIT
+        </div>
+    </footer>
+</body>
 
-    <!-- COUNTING -->
-    <script>
-        const counters = document.querySelectorAll(".counter");
-        const speed = 200; // The lower the slower
+<!-- COUNTING -->
+<script>
+    const counters = document.querySelectorAll(".counter");
+    const speed = 200; // The lower the slower
 
-        counters.forEach((counter) => {
-            const updateCount = () => {
-                const target = +counter.getAttribute("data-target");
-                const count = +counter.innerText;
+    counters.forEach((counter) => {
+        const updateCount = () => {
+            const target = +counter.getAttribute("data-target");
+            const count = +counter.innerText;
 
-                // Lower inc to slow and higher to slow
-                const inc = 2;
+            // Lower inc to slow and higher to slow
+            const inc = 2;
 
-                // console.log(inc);
-                // console.log(count);
+            // console.log(inc);
+            // console.log(count);
 
-                // Check if target is reached
-                if (count < target) {
-                    // Add inc to count and output in counter
-                    counter.innerText = count + Math.trunc(inc);
-                    // Call function every ms
-                    setTimeout(updateCount, 1);
-                } else {
-                    counter.innerText = target;
-                }
-            };
-
-            updateCount();
-        });
-    </script>
-
-    <!-- TIMER -->
-    <script>
-        // Set the date we're counting down to
-        var countDownDate = new Date("June 20, 2020 18:00:00").getTime();
-
-        // Update the count down every 1 second
-        var x = setInterval(function () {
-            // Get today's date and time
-            var now = new Date().getTime();
-
-            // Find the distance between now and the count down date
-            var distance = countDownDate - now;
-
-            // Time calculations for days, hours, minutes and seconds
-            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            var hours = Math.floor(
-                (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-            );
-            var minutes = Math.floor(
-                (distance % (1000 * 60 * 60)) / (1000 * 60)
-            );
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            // Display the result in the element with id="demo"
-            document.getElementById("demo").innerHTML =
-                days + " : " + hours + " : " + minutes + " : " + seconds;
-
-            // If the count down is finished, write some text
-            if (distance < 0) {
-                clearInterval(x);
-                document.getElementById("demo").innerHTML = "EXPIRED";
-            }
-        }, 1000);
-    </script>
-
-    <!-- POP UP -->
-    <script>
-        setTimeout(() => {
-            $(".modal").modal("show");
-        }, 4000);
-    </script>
-
-    <script>
-        function submitTheForm() {
-            console.log();
-            if (
-                $("#email_add").val() != "" &&
-                /^\S+@\S+$/.test($("#email_add").val())
-            ) {
-                if ($("#phone_number").val() != "") {
-                    swal(
-                        "Good job!",
-                        "Check your email , Question Noted!",
-                        "success"
-                    );
-                    setTimeout(() => {
-                        document.getElementById("form_data").submit();
-                    }, 3000);
-                } else {
-                    swal("Oh no!", "Enter phone number!", "error");
-                }
+            // Check if target is reached
+            if (count < target) {
+                // Add inc to count and output in counter
+                counter.innerText = count + Math.trunc(inc);
+                // Call function every ms
+                setTimeout(updateCount, 1);
             } else {
-                swal("Oh no!", "Enter email address!", "error");
+                counter.innerText = target;
             }
+        };
 
-            // swal("Good job!", "You question has been noted!", "success");
+        updateCount();
+    });
+</script>
+
+<!-- TIMER -->
+<script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("June 20, 2020 18:00:00").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function () {
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor(
+            (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        var minutes = Math.floor(
+            (distance % (1000 * 60 * 60)) / (1000 * 60)
+        );
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Display the result in the element with id="demo"
+        document.getElementById("demo").innerHTML =
+            days + " : " + hours + " : " + minutes + " : " + seconds;
+
+        // If the count down is finished, write some text
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
         }
-    </script>
+    }, 1000);
+</script>
+
+<!-- POP UP -->
+<script>
+    setTimeout(() => {
+        $(".modal").modal("show");
+    }, 4000);
+</script>
+
+<script>
+    function submitTheForm() {
+        console.log();
+        if (
+            $("#email_add").val() != "" &&
+            /^\S+@\S+$/.test($("#email_add").val())
+        ) {
+            if ($("#phone_number").val() != "") {
+                swal(
+                    "Good job!",
+                    "Check your email , Question Noted!",
+                    "success"
+                );
+                setTimeout(() => {
+                    document.getElementById("form_data").submit();
+                }, 3000);
+            } else {
+                swal("Oh no!", "Enter phone number!", "error");
+            }
+        } else {
+            swal("Oh no!", "Enter email address!", "error");
+        }
+
+        // swal("Good job!", "You question has been noted!", "success");
+    }
+</script>
+
 </html>

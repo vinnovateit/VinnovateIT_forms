@@ -3,7 +3,7 @@ var bodyParser = require("body-parser");
 const cors = require("cors");
 var nodemailer = require("nodemailer");
 var mongoose = require("mongoose");
-var message = require("./template.js");
+var latest_mess = require("./template_aft.js");
 
 var app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -58,8 +58,8 @@ fetchAllEmails().then((everyday_mailingList) => {
     var transporter = nodemailer.createTransport({
         service: "gmail",
         auth: {
-            user: "wimpycodes@gmail.com",
-            pass: "viit_is_the_best",
+            user: "greetyourgirlfriend@gmail.com",
+            pass: "Mama!@#123",
         },
     });
 
@@ -69,7 +69,7 @@ fetchAllEmails().then((everyday_mailingList) => {
             from: "VinnovateIT",
             to: element,
             subject: `Join VinnovateIT at 6:00PM on 20th June.`,
-            html: `${message}`,
+            html: `${latest_mess}`,
         };
 
         transporter.sendMail(mailOptions, function (error, info) {
